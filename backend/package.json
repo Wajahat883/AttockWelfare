@@ -31,5 +31,8 @@
     "ts-node": "^10.9.2",
     "tsx": "^4.23.12",
     "typescript": "^7.0.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19"
   }
 }

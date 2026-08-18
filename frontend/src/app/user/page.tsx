@@ -1,0 +1,17 @@
+"use client";
+
+export default function UserDashboard() {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+        <h1 className="text-3xl font-bold text-gray-900">My Profile</h1>
+        <p className="text-gray-600 mt-2">View your payment history and profile</p>
+        
+        {/* TODO: Implement User Dashboard Components */}
+        <div className="mt-8 p-6 bg-white rounded-lg shadow">
+          <p className="text-gray-600">User dashboard features coming soon...</p>
+        </div>
+      </div>
+    </div>
+  );
+}

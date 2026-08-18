@@ -3,38 +3,38 @@
 ## Phase 0: Project Setup & Structure
 
 ### Step 1: Initialize Project Folders
-- [ ] Create `frontend/` folder (Next.js 14+ App Router)
-- [ ] Create `backend/` folder (Express API)
-- [ ] Initialize Git repository
-- [ ] Create `.gitignore` for Node.js projects
+- [x] Create `frontend/` folder (Next.js 14+ App Router)
+- [x] Create `backend/` folder (Express API)
+- [x] Initialize Git repository
+- [x] Create `.gitignore` for Node.js projects
 
 ### Step 2: Frontend Setup (Next.js + TypeScript + Tailwind)
-- [ ] Initialize Next.js 14 with TypeScript
-- [ ] Install Tailwind CSS
-- [ ] Install shadcn/ui components library
-- [ ] Set up folder structure:
+- [x] Initialize Next.js 14 with TypeScript
+- [x] Install Tailwind CSS
+- [x] Install shadcn/ui components library
+- [x] Set up folder structure:
   - `src/app/` — Pages/routes
   - `src/components/` — Reusable UI components
   - `src/lib/` — API client utilities
   - `src/types/` — TypeScript type definitions
   - `public/` — Static files, PWA manifest
-- [ ] Create `.env.local` for API URLs
+- [x] Create `.env.local` for API URLs
 
 ### Step 3: Backend Setup (Express + TypeScript + Prisma)
-- [ ] Initialize Node.js project with TypeScript
-- [ ] Install Express, Prisma, JWT libraries (jsonwebtoken, bcryptjs)
-- [ ] Set up folder structure:
+- [x] Initialize Node.js project with TypeScript
+- [x] Install Express, Prisma, JWT libraries (jsonwebtoken, bcryptjs)
+- [x] Set up folder structure:
   - `src/routes/` — API endpoints
   - `src/controllers/` — Request handlers
   - `src/services/` — Business logic
   - `src/middleware/` — Auth, role-checking middleware
   - `src/utils/` — Helper functions
   - `prisma/` — Database schema
-- [ ] Create `.env` for database, JWT secret
+- [x] Create `.env` for database, JWT secret
 
 ### Step 4: Database Schema (Prisma + MySQL)
 - [ ] Install MySQL locally (or use cloud MySQL)
-- [ ] Create Prisma schema:
+- [x] Create Prisma schema:
   - `users` table (id, name, father_name, address, phone, password_hash, role, monthly_amount, is_active, created_at)
   - `payments` table (id, user_id, month, year, amount, status, paid_date, added_by)
 - [ ] Run `prisma migrate dev` to create database
@@ -44,33 +44,33 @@
 ## Phase 1: Authentication & Role-Based Access
 
 ### Step 5: Backend — JWT Authentication
-- [ ] Create JWT token generation function
-- [ ] Create `authMiddleware` — validates JWT, extracts user role
-- [ ] Create `roleMiddleware` — checks if user has permission for action (Owner/Admin/User)
-- [ ] Create password hashing utility with bcrypt
+- [x] Create JWT token generation function
+- [x] Create `authMiddleware` — validates JWT, extracts user role
+- [x] Create `roleMiddleware` — checks if user has permission for action (Owner/Admin/User)
+- [x] Create password hashing utility with bcrypt
 
 ### Step 6: Backend — Login API Endpoint
-- [ ] Create `POST /api/auth/login` endpoint
+- [x] Create `POST /api/auth/login` endpoint
   - Input: phone + password
   - Output: JWT token + user role + user ID
   - Error handling: invalid credentials, inactive user
 
 ### Step 7: Frontend — Login Page
-- [ ] Design login page with Tailwind + shadcn/ui
+- [x] Design login page with Tailwind + shadcn/ui
   - Phone number input
   - Password input
   - Submit button
   - Error message display
-- [ ] Store JWT token in localStorage/cookies
-- [ ] Redirect to appropriate dashboard based on role
+- [x] Store JWT token in localStorage/cookies
+- [x] Redirect to appropriate dashboard based on role
 
 ### Step 8: Frontend — Role-Based Route Guards
-- [ ] Create `ProtectedRoute` component — checks JWT + role
-- [ ] Create redirects:
+- [x] Create `ProtectedRoute` component — checks JWT + role
+- [x] Create redirects:
   - Owner → `/owner` dashboard
   - Admin → `/admin` dashboard
   - User → `/user` dashboard
-- [ ] Logout functionality
+- [x] Logout functionality
 
 ---
 

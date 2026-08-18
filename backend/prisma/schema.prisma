@@ -1,13 +1,64 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
-// Get a free hosted Postgres database in seconds: `npx create-db`
-
 generator client {
-  provider = "prisma-client"
+  provider = "prisma-client-js"
   output   = "../src/generated/prisma"
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
+}
+
+// User model
+model User {
+  id            Int       @id @default(autoincrement())
+  name          String    @db.VarChar(255)
+  fatherName    String?   @db.VarChar(255)
+  address       String?   @db.LongText
+  phone         String    @unique @db.VarChar(20)
+  passwordHash  String    @db.LongText
+  role          Role      @default(USER)
+  monthlyAmount Decimal   @default(0) @db.Decimal(10, 2)
+  isActive      Boolean   @default(true)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  
+  // Relations
+  payments      Payment[]
+
+  @@map("users")
+}
+
+// Payment model
+model Payment {
+  id        Int       @id @default(autoincrement())
+  userId    Int
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  month     String    @db.VarChar(7) // Format: "YYYY-MM"
+  year      Int       // For faster filtering
+  amount    Decimal   @db.Decimal(10, 2)
+  status    PaymentStatus @default(UNPAID)
+  paidDate  DateTime? // When the payment was actually made
+  addedBy   Int       // User ID of admin/owner who added it
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  
+  @@index([userId])
+  @@index([month])
+  @@index([year])
+  @@map("payments")
+}
+
+// Enums
+enum Role {
+  OWNER @map("owner")
+  ADMIN @map("admin")
+  USER  @map("user")
+}
+
+enum PaymentStatus {
+  PAID     @map("paid")
+  UNPAID   @map("unpaid")
+  PARTIAL  @map("partial")
 }
