@@ -5,6 +5,7 @@ export type UserRole = "OWNER" | "ADMIN" | "USER";
 export interface User {
   id: number;
   name: string;
+  email?: string;
   fatherName?: string;
   address?: string;
   phone: string;
@@ -28,6 +29,7 @@ export interface AuthResponse {
 
 // Payment status
 export type PaymentStatus = "paid" | "unpaid" | "partial";
+export type PaymentMethod = "cash" | "bank_transfer" | "jazzcash" | "easypaisa" | "other";
 
 // Payment
 export interface Payment {
@@ -41,6 +43,9 @@ export interface Payment {
   addedBy: number;
   createdAt: string;
   updatedAt: string;
+  receiptNumber?: string;
+  paymentMethod: PaymentMethod;
+  user?: { id: number; name: string; phone?: string };
 }
 
 // Member with payments
@@ -53,9 +58,19 @@ export interface DashboardSummary {
   currentMonth: string;
   currentYear: number;
   totalMembers: number;
+  totalAdmins: number;
+  totalExpectedAmount: number;
+  totalPaymentRecords: number;
+  recentPayments: Payment[];
   collectedThisMonth: number;
   pendingThisMonth: number;
   defaulterCount: number;
+}
+
+export interface YearlyReport {
+  year: number;
+  totalCollected: number;
+  months: { month: string; collected: number; payments: number }[];
 }
 
 // API responses
@@ -86,6 +101,7 @@ export interface RecordPaymentFormData {
   userId: number;
   amount: number;
   status: PaymentStatus;
+  paymentMethod?: PaymentMethod;
   month?: string;
   year?: number;
 }

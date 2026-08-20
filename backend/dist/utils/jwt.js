@@ -5,7 +5,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.extractTokenFromHeader = exports.verifyToken = exports.generateToken = void 0;
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
-const JWT_SECRET = process.env.JWT_SECRET || "your-secret-key";
+const JWT_SECRET = process.env.JWT_SECRET;
+if (!JWT_SECRET) {
+    throw new Error("JWT_SECRET must be configured before starting the backend");
+}
 const generateToken = (payload) => {
     return jsonwebtoken_1.default.sign(payload, JWT_SECRET, {
         expiresIn: "7d",
@@ -19,7 +22,6 @@ const verifyToken = (token) => {
         return decoded;
     }
     catch (error) {
-        console.error("JWT verification failed:", error);
         return null;
     }
 };

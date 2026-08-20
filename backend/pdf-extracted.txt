@@ -1,0 +1,173 @@
+--- PAGE 1 ---
+ATTOCK WELFARE
+RIYADH LIST
+HEAD ADMIN | TARIQ AZIZ
+CONTACT | 058-3035869
+CITYS ADMIN
+Name | Father Name | Address | Number | June Date | June Amount | July Date | July Amount | August Date | August Amount
+Muhammad Ali Khan | Khalid Mahmood | RIYADH ADMIN | 053-4821023 | 12/6/2026 | 100 | 15/7/2026 | 50
+Attiq Ahmed | Muhammad Ayub | RIYADH ADMIN | 057-8664252 | 21/6/2026 | 70 | 16/7/2026 | 40
+Jabar Zaman | Arif Khan | JEDDAH ADMIN | 057-4459469 | 21/6/2026 | 80 | 16/7/2026 | 40
+Naveed | ........ | MADINA ADMIN | 058-0428173 | 22/6/2026 | 100 | 12/7/2026 | 50
+Taufeeq Hanif | ..... | Dammam Admin | 054-2074333 | 25/6/2026 | 100 | 3/7/2026 | 30
+COMMITTIE PERSONS ALL CITYS
+Name | Father Name | Address | Number | June Date | June Amount | July Date | July Amount | August Date | August Amount
+Abrar Ahmed | Muhammad Azam | Munta | 057-3091767 | 12/06/206 | 50 | 3/8/2026 | 20
+Aqeel Ahmed | Muhammad Youns | Barazai | 053-0039409 | 21/06/2026 | 50 | 3/8/2026 | 20
+Asif Mahmood | Muhammad Aliyas | Dhok Garh | 057-4305962 | 9/6/2026 | 50 | 3/8/2026 | 20
+Asrarar Ahmed | Muhammad Razaib | Attock | ....... | 13/06/2026 | 50
+Atif Mahmood | Khalid Mahmood | Taja Baja | 057-6583541 | 9/6/2026 | 50 | 4/7/2026 | 50
+Azhar Mahmood | Muhammad Saleem | Attock | 059-0020461 | 13/06/2026 | 50 | 3/8/2026 100 for 5 mpnth
+Ejaz Ahmed | Faqeer Ahmed | Yaseen Khurd | 058-0574634 | Cash 70 Riyal | 70 | 5/8/2026 | 20
+Fasil Mahmmod | Muhammad Aliyas | Dhok Garh | 054-5691714 | 9/6/2026 | 50 | 3/8/2026 | 20
+Fasil Mahmood | Sultan Mahmood | Maluk Malah | 057-6341601 | 8/6/2026 | 50
+Fatheh Alam | Amanat Khan | Boota | 055-4706786 | 24/06/2026 | 50
+Ghulam Mujtaba | Muhammad Sideeq | Burhan | 0582-464278 | 9/6/2026 | 50
+Hameed Ahmed | Muhammad Yaqoob | Burhan | 053-3212769 | 23/06/2026 | 50 | 28/7/2026 | 20
+Hussnain Ali | Muhammad Farooq | Pahti | 059-2316786 | 6/7/2026 | 50 | 2/8/2026 | 20
+ilyas | SiKandar Khan | Barazai | 058-3665467 | 25/06/2026 | 50
+Imtayaz Khan | Zariaf Khan | Pind Mahree | 059-8723270 | 23/06/2026 | 50 | 28/7/2026 | 100 for 5 month
+Israr Ahmed | Muhammad RaZaib | Hameeda | 057-5568088 | 9/6/2026 | 50
+Jameel Ahmed | Muhammad Yaqoob | Hazro | 059-3514734 | 11/7/2026 | 50
+Jhangir Khan | Muneer Ahmed | Kalo Pind | 059-1781814 | 13/06/2026 | 50 | 4/7/2026 | 50
+Ghulam Mujtaba | Ghulam Mustafa | Barazi | 056-9370824 | 3/8/2026 | 70
+Juniad Rahman | Safdar Zaman | Yaseen Khurd | 057-0834717 | 8/6/2026 | 50
+Kahsif Ali | Ali Hassan Sha | Attock | ...... | 13/06/2026 | 50 | 4/7/2026 | 20
+Karamat | Akram Khan | Golarah | 050-6981173 | 20/06/2026 | 50 | 31/7/2026 | 20
+Khuraram Shahzad | Khalid Mahmood | Mosa | 057-727593 | 23/06/2026 | 50 | 11/7/2026 | 50
+Khuraram Shahzad | Muhammad Farooq | Attock | ......... | 28/06/2026 | 50
+Mahtab Hussain | Qamar Hussain | Fateh jahng | 055-2101783 | 11/7/2026 | 50 | 2/8/2026 | 20
+Malik Umer | Shair Afsar | Attock | ........... | 8/6/2026 | 50
+Mudasir Iqbal | Muhammad Bashir | Bota | 059-9275825 | 10/7/2026 | 50
+Muhaamd Niyaz | Muhammad Riyaz | Haji Sha | 057-7828180 | 15/06/2026 | 50 | 7/7/2026 | 20
+Muhammad Ahmed | Umer Farooq | QasimAbad | 057-6127206 | 13/06/2026 | 50 | 29/7/2026 | 20
+Muhammad Awais | Muhammad Ramzan | Attock | 051-0538501 | 9/6/2026 | 50
+Muhammad Basharat | Muhammad Riaz | Nartopa | 055-7597592 | 1/7/2026 | 50 | 5/8/2026 | 20
+Muhammad Bilal | Muhammad Saleem | Sarwana | 058-0673169 | 25/06/2026 | 50
+Muhammad Imran | Akhtar Zaman | Attock | 054-0923417 | 9/6/2026 | 50 | 28/7/2026 | 100 for 5 month
+Muhammad Islam | Muhammad Ahsan | Bahbodi | 057-7306412 | 11/7/2026 | 50
+Muhammad Mushtak | Muhammad Ishaq | Hazro | 058-3190303 | 21/06/2026 | 100
+Muhammad Nadeem | Muhammad Saleem | Hassan Abdal | 057-2687592 | 27/06/2026 | 50 | 3/8/2026 | 20
+Muhammad Nisar | Shair Muhammad | Barazai | 057-5361188 | 8/6/2026 | 50 | 5/8/2026 | 20
+Muhammad Shafiq | Muhammad Arif | Tahkiriya Ziyarat | 058-0936559 | 29/06/2026 | 50
+--- PAGE 2 ---
+Muhammad Tahir | Muhammad Firdos | Sarwana | 050-0288623 | 9/6/2026 | 50
+Muhammad Tariq | Shair Mohammad | Maluk Mala | 050-6453765 | 4/7/2026 | 120
+Muhammad Umer | Javaid Iqbal | Attock | ......... | 12/6/2026 | 50
+Muhammad Yousaf | Muhammad Ayub | Barazai | 057-3409621 | 21/06/2026 | 50 | 3/8/2026 | 20
+Muhammad Zahid | Akbar Khan | Aowz Bahksi | 057-2286431 | 9/6/2026 | 50 | 5/7/2026 | 20 | 6/8/2026 | 20
+Muhammad Zubair | Muhammad Nawaz | Jalaliya | 058-1513578 | 13/06/2026 | 50 | 5/7/2026 | 60 three month
+Naseer Khan | Dooraab | Fateh jahng | 053-5786435 | 28/06/2026 | 50 | 26/7/2026 | 20
+Tanveer Ahmed | Muhammad Ismail | Jahnd Dara Bari | 059-7608427 | 9/6/2026 | 50
+Riyasat Khan | SiKandar Khan | Barazai | 055-5432685 | 25/06/2026 | 50 | 3/8/2026 | 20
+Safdar Zaman | Abdul-Jabar | Yaseena | 055-5458287 | 9/6/2026 | 50
+Sajjad Ahmed | Hakim Khan | Hassan Abdal | 059-5991516 | 23/06/2026 | 50 | 31/7/2026 | 40
+Shakeel Ahmed | Bashir Ahmed | Bagh Naylab | 057-6186690 | 6/7/2026,31/7/2026 | 50 , 20
+Shakir Khan | Muhammad Jan | Yaseen Khurd | 055-6312385 | 12/6/2026 | 50 | 7/8/2026 | 20
+Tanveer Ahmed | Muhammad Ismail | Attock | 059-7608427 | 13/06/2026 | 50
+Tariq Mahmood | Abdul jalil | Nartopa | 058-3768599 | 9/6/2026 | 50 | 28/7/2026 | 100 for 5 month
+Umair Ali | Zulfiqar Ali | Golarah | 055-2718974 | 20/06/2026 | 50 | 31/7/2026 | 20
+Umer Ahmed | Muhammad Bashir | Sarwana | 057-6305675 | 9/6/2026 | 100
+Umer Hiyat | Abdul-Rahim | Barazi | 059-0288364 | 23/06/2026 | 50 | 2/8/2026 100 for 5 month
+Yaseen Baig | Muhammad Iqbal | Attock | .......... | 6/7/2026 | 50
+Yasir Iqbal | Rehmat Ellahi | Attock | .......... | 11/7/2026 | 90
+Yasir Mahmood | Muhammad Aliyas | Dhok Garh | 059-6370686 | 9/6/2026 | 50 | 3/8/2026 | 20
+Zaheer Iqbal | Muhammad Saleem | Barazai | 059-0020461 | 9/6/2026 | 50
+Zaheer Iqbal | Aurang Zab | Durnal Po Dhurnal | 059-7107634 | 13/06/2026 | 50
+Zulfiqar Ahmed | Muhammad Ismail | Saleem Khan | 058-3457698 | 8/6/2026 | 50 | 28/7/2026 | 20
+Abdul Rahim Khan | Summander Khan | jund po | 058-3410125 | 13/06/2026 | 50 | 31/7/2026 | 40 for 2 month
+Adil Khan | Hakeem Khan | momenpur | 056-6299072 | 9/6/2026 | 50
+Akeer Mahmood | Shair Muhammad | Attock | ......... | 12/6/2026 | 50
+Akseer Khan | Muzaffar khan | Burhan | 055-0445496 | 4/7/2026 | 50
+Akseer Mehmood | Sher Muhammad | Fateh Jang Tehsil Attock | 058-3263202 | 9/6/2026 | 50 | 4/7/2026 | 50
+Amir Ali | Ansar Khan | Hassan Abdal Attock | 053-4600953 | 14/06/2026 | 50
+Asif Khan | Nazaam Deen | Mahraabad | 0571-590293 | 4/7/2026 | 70
+Azmat Ali | Sultan Afzal | Village Fakeera Abad Attock | 058-3792072 | 13/06/2026 | 50
+Danish Ali | Muhammad Ishaq | Village Halik Dahd Attock | 059-1730756 | 12/6/2026 | 50
+Amjad Ali | Muhammad Tufail | Tahti noor | 053-63803686 | 13/7/2026 | 50 | 2/8/2026 | 20
+Ishtiaq Ahmed | Jaffar Khan | Burhan | 054-0831785 | 26/06/2026 | 50
+Jameel-ul-Rahman | Muhammad Niayaz | Attock | 058-3586454 | 12/6/2026 | 50
+Kamran Khan | Shair Khan | Dhok Kawa | 055-1598746 | 12/6/2026 | 50
+Khalid Mahmood | Ghulam Mustafa | Sha Pur Shamsabad | 051-0198122 | 11/6/2026 | 70 | 28/7/2026 | 20
+Khasif Ali | Ali Hassan | Hazro Attock | 054-6675381 | 28/06/2026 | 50
+Mudassir | Akbar Khan | Sarwana | 059-3073271 | 8/6/2026 | 50 | 2/8/2026 60 jul ,aug ,sep
+Muhammad Abu Huraira | Ata Muhammad Khan | Nartopa | 055-1722820 | 8/6/2026 | 60 | 30/7/2026 | 20
+Muhammad Adeel | Abdul-Raheem | Burhan | 055-7703762 | 8/6/2026 | 50 | 4/7/2026 | 50
+Muhammad Idris | Muhammad Rawayat | Haji sha | 056-9394637 | 11/7/2026, 28/7/2026 | 50 , 20
+Muhammad Sohail | Muhammad Rawayat | Hajji Sha | 054-1032922 | 30/06/2026 | 50 | 14/7/2026 | 20
+Muhammad Tahir | Muhammad Siddiq | Village Burhan Attock | 059-1300526 | 8/6/2026 | 50 | 4/7/2026 | 20
+Nouman Ishaq | Muhammad Ishaq | Attock | 053-0561045 | 11/7/2026 | 50
+Qasim Ali | Binars Sha | Attock | ........ | 12/6/2026 | 50
+Sajid Mahmood | Adalat Sha | Banhari Gul Shair | 058-3480543 | 8/6/2026 | 70 | 4/8/2026 | 20
+Shahzad Ahmad | GhulamKhan | Khumrah | 058-0995182 | 8/6/2026 | 50
+Muhammad Hussnain | Farman Ali | Jalaliya | 057-2657825 | 2/8/2026 | 50
+Sheryar Khan | Akhtar Nawaz | Burhan | 055-1790354 | 9/6/2026 | 50
+Tanweer Hussain | Shabbir Hussain | Rahmwa | ....... | 30/06/2026 | 50
+Umer Fahad | Irshad Mahmood | Samaa | 059-6197248 | 8/6/2026 | 50
+Abdullah | Isra-ul-Haq | Sama Hazro | 057-8246188 | 9/6/2026 | 50
+Abdullah | Muhammad Agull | Yaseen Khurd | 054-4514601 | 9/6/2026 | 50
+Ahmed Nawaz | Abid Nawaz | Sama Hazro | 032-09764661 | 9/6/2026 | 50
+--- PAGE 3 ---
+Ajaz Ahmed | Faqeer Ahmed | Attock | 058-0574634 | 14/06/2026 | 50
+Amir Zaman | Mumbraiz Khan | Attock | 050-0480934 | 13/06/2026 | 50
+Aqeel Ahmed | Muhammad Shafique | Attock | 059-1921969 | 14/06/2026 | 50
+Ayaz Khan | Muhammad Riaz | Attock | .......... | 9/6/2026 | 50
+Jameel Azad | Mohammad Sadiq | Baryar | 053-6096361 | 13/06/2026 | 50
+Junaid | Ishaq | Barazai | 057-6895316 | 9/6/2026 | 50
+Muhammad Aqul | Abdull Jabar | Attock | 050-2557786 | 14/06/2026 | 50
+Muhammad Ashfaq | Sher Afsar | Attock | .......... | 8/6/2026 | 50 | 30/7/2026 | 20
+Muhammad Fazan | Muhammad Ramzan | Attock | 059-7842669 | 13/06/2026 | 50
+Muhammad Shoaib | Samandar Khan | Bahdar Khan | 058-1262489 | 14/06/2026 | 50
+Muhammad Umer | Muhammad Naseer | Hazro Attock | 058-3544918 | 9/6/2026 | 50
+Naseer Ahmed | Mustafa | Yaseen Khurd | 059-4397227 | 14/06/2026 | 50 | 2/8/2026 | 20
+Nasir Javeed | Hafiz Muhammad | Noor Pur | 057-1994773 | 28/06/2026 | 50
+Nikash Isfaq | Ishfaq Ahmed | Sama Hazro | 059-7794765 | 14/06/2026 | 50
+Qasim Ali | Banaras | Hazro Attock | 057-7080388 | 9/6/2026 | 50
+Saeed-ul-Rahman | Syed Mustafa | Attock | 055-3532988 | 13/06/2026 | 50
+Shakeel Sha | Ameer Sha | Haroon chngah | 057-6761043 | 16/06/2026 | 50 | 3/8/2026 | 20
+Tanveer Hussain | Shabbir Hussain | Rahmoo | ..... | 30/06/2026 | 50 | 31/7/2026 | 20
+Tariq Aziz | Syed Mustafa | Yaseena | 058-3035869 | 9/6/2026 | 50
+Zahid Usman | Ayaz Gull | Attock | 054-9775595 | 13/06/2026 | 50
+Asif Mahmood | Muhammad Mahboob | Fetha Jhang | 053-7904681 | 6/7/2026 | 70 | 5/8/2026 | 40
+Muhammad Billal | Muhammad Bashir | Hassan Abdal | 053-7884095 | 6/7/2026 | 70
+Nayyar Iqbal | Sher Afzal Marhoom | Jabbi Kasran | 050-6211931 | 6/7/2026 | 50 | 3/8/2026 | 20
+Nazakat Khan | Sabir Hussain | Village Fogi Mill Hazro Attock | 057-2052519 | 6/7/2026 | 70
+Zameer Ahmed | Muhammad Nasim | Hazro | 059-1095743 | 6/7/2026 | 50
+Abid Mahmood | Abdul-Hameed | Shamsabad | 057-3650675 | 12/6/2026 | 50 | 2/8/2026 40 jul,aug
+Asad Ali | Muhammad Safeer | Chakra | 057-1191220 | 12/6/2026 | 50
+Muhammad Awais | Muhammad Ramzan | Attock | 051-0538501 | 12/6/2026 | 50
+Naveed Khan | Ghulam Fareed | Yaseen Kalan | 058-0428173 | 12/6/2026 | 50
+Muhammad Luqman | Muhammad Manzoor | Tar Bahthi | 055-6798733 | 17/06/2026 | 50 | 7/8/2026 | 20
+Abdul Wahab Mavia | Abdul Rasheed | Bahga Nylab | 059-0493867 | 8/6/2026 | 50 | 11/7/2026 | 20
+Abid Hussain | Muhammad Firdos | Sahbaz garh | 051-0586204 | 11/7/2026 | 50 | 2/8/2026 | 20
+Azmat Khan | Muhammad Azam | Village Maluk Mala Hazro Attock | 059-5253054 | 9/6/2026 | 70
+Jamil-ur-Rahman | Muhammad Niaz | Yaseen Khurd | 058-3586454 | 11/6/2026 | 50
+Khalid Mahmood | Muhammad Nawaz | Sarwana | 058-3617635 | 13/06/2026 | 50
+Masood Iqbal | Muhammad Akbar | Mansar | 055-9139632 | 11/7/2026 | 70
+Mudasar Ahmed | Akbar Khan | Village Sardana | 059-3073271 | 8/6/2026 | 50
+Muhammad Irshad | Muhammad Ashraf | Village Sardana | 059-9008252 | 8/6/2026 | 50
+Muhammad Ishaq | Ghulam Yousaf | Traap | 059-6815505 | 13/06/2026 | 50
+Muhammad Mobeen | Muhammad Saddique | Fateh Jahng | 056-9778671 | 11/7/2026 | 50
+Muhammad Shafique | Muhammad Saddique | Hassan Abdal | 059-8865519 | 8/6/2026 | 50 | 28/7/2026 | 60 for 3month
+Muhammad Ubaid | Muhammad Ajmal | Village Sardana | 057-8317817 | 8/6/2026 | 50
+Nasir Irfan | Muhammad Irfan | Attock | ........ | 15/06/2026 | 50 | 28/7/2026 | 20 | 2/8/2026 | 20
+Sajjad Ahmed | Muhammad Yaqoob | Village Hazro Attock | 058-3510159 | 9/6/2026 | 50
+Tahir Mahmood | Muhammad Mushtak | Gurgushtiya | 057-4198790 | 15/06/2026 | 50
+Ubaid | Muhammad Ajmal | Attock | 057-8317817 | 8/6/2026 | 50
+Rasheed Asif | Bashir Ahmed | Bahga Nylab | 059-0493867 | 10/7/2026 | 50
+Zameer Khan | Ameer Khan | ....... | ...... | 12/6/2026 | 50
+Zia-ul-Haq | Muhammad Fazal Haq | Peer Zai | ............. | 29/06/2026 | 100
+Muhammad Awais | Muhammad Ashraf | Bahtiya | 057-6904501 | 10/7/2026 | 50
+Sharaz Ahmed | Ashiq Hussain | Haji Sha mor | 056-9166985 | 29/06/2026 | 50 | 11/7/2026 | 50
+Sadam Khan | Akbar Khan | Burhan | 054-6568443 | 14/7/2026 | 50
+Muhammad Ajmal | Muhammad Tufail | Ganda Kas | 058-1519412 | 14/7/2026 | 70
+Tanveer Hussain | Ashiq Hussain | Pindi Ghab | 055-9373957 | 14/7/2026, 28/7/2026 | 70 , 20
+Musaddaq Zeeshan | Muhammad Yousaf | Fateh Jahng | 050-6648372 | 15/07/2026 | 70 | 2/8/2026 | 100
+Amir Riaz | Muhammad Riaz | Hassan Abdal | 050-2996769 | 15/07/2026 | 50
+Aksar Zaman | Mina Khan | Barazai | 058-3714088 | 14/7/2026 | 50 | 3/8/2026 40 jul,aug
+Inayat Rahman | Saeed Ur Rahman | Behboodi | 056-3171089 | 14/7/2026 | 50 | 3/8/2026 40 jul,aug
+--- PAGE 4 ---
+Shafaqat Baig | Nazakat Baig | Hassan Abdal | 057-4313545 | 15/7/2026 | 50 | 3/8/2026 40 jul,aug
+Muhammad Naeem | Noor Rehmat | Attock | 059-8115296 | 29/06/2026 | 50
+Saijid Khan | ...... | Attock | 0591-427284 | 26/7/2026 | 50
+Waqas Ahmed | Muhammad Mushtak | Pirzai | 059-8743690 | 29/06/2026 | 50 | 13/7/2026 | 20

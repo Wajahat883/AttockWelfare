@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.prisma = void 0;
+require("dotenv/config");
 const prisma_1 = require("../generated/prisma");
 exports.prisma = new prisma_1.PrismaClient({
     log: ["info", "warn", "error"],

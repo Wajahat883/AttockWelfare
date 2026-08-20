@@ -1,0 +1,5 @@
+"use client";
+import { useState } from "react";
+import { membersApi } from "@/lib/api";
+import { User } from "@/types";
+export function GlobalSearch() { const [query, setQuery] = useState(""); const [results, setResults] = useState<User[]>([]); const search = (value: string) => { setQuery(value); if (value.trim().length < 2) { setResults([]); return; } void membersApi.search(value).then((response) => setResults(response.data.data ?? [])).catch(() => setResults([])); }; return <div className="relative w-full max-w-sm"><input value={query} onChange={(event) => search(event.target.value)} placeholder="Search members..." className="min-h-11 w-full rounded-lg border px-3" />{results.length > 0 && <div className="absolute inset-x-0 top-12 z-30 rounded-lg border bg-white p-2 shadow-xl">{results.map((member) => <a className="block rounded p-2 text-sm hover:bg-slate-50" href={`#member-${member.id}`} key={member.id}><strong>{member.name}</strong><span className="ml-2 text-slate-500">{member.phone}</span></a>)}</div>}</div>; }

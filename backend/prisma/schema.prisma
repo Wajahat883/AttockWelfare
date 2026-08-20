@@ -8,24 +8,27 @@ generator client {
 
 datasource db {
   provider = "mysql"
+  url      = env("DATABASE_URL")
 }
 
 // User model
 model User {
   id            Int       @id @default(autoincrement())
-  name          String    @db.VarChar(255)
-  fatherName    String?   @db.VarChar(255)
-  address       String?   @db.LongText
-  phone         String    @unique @db.VarChar(20)
-  passwordHash  String    @db.LongText
+  name          String
+  fatherName    String?
+  address       String?
+  email         String?   @unique
+  phone         String
+  passwordHash  String
   role          Role      @default(USER)
-  monthlyAmount Decimal   @default(0) @db.Decimal(10, 2)
+  monthlyAmount Decimal   @default(0)
   isActive      Boolean   @default(true)
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
   
   // Relations
   payments      Payment[]
+  auditLogs     AuditLog[]
 
   @@map("users")
 }
@@ -35,19 +38,37 @@ model Payment {
   id        Int       @id @default(autoincrement())
   userId    Int
   user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
-  month     String    @db.VarChar(7) // Format: "YYYY-MM"
+  month     String    // Format: "YYYY-MM"
   year      Int       // For faster filtering
-  amount    Decimal   @db.Decimal(10, 2)
+  amount    Decimal
   status    PaymentStatus @default(UNPAID)
   paidDate  DateTime? // When the payment was actually made
   addedBy   Int       // User ID of admin/owner who added it
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
+  receiptNumber String? @unique @default(cuid())
+  paymentMethod PaymentMethod @default(CASH)
   
   @@index([userId])
   @@index([month])
   @@index([year])
+  @@unique([userId, month])
   @@map("payments")
+}
+
+model AuditLog {
+  id        Int      @id @default(autoincrement())
+  actorId   Int
+  actor     User     @relation(fields: [actorId], references: [id], onDelete: Cascade)
+  action    String
+  entity    String
+  entityId  Int?
+  details   String?
+  createdAt DateTime @default(now())
+
+  @@index([actorId])
+  @@index([createdAt])
+  @@map("audit_logs")
 }
 
 // Enums
@@ -61,4 +82,12 @@ enum PaymentStatus {
   PAID     @map("paid")
   UNPAID   @map("unpaid")
   PARTIAL  @map("partial")
+}
+
+enum PaymentMethod {
+  CASH          @map("cash")
+  BANK_TRANSFER @map("bank_transfer")
+  JAZZCASH      @map("jazzcash")
+  EASYPAISA     @map("easypaisa")
+  OTHER         @map("other")
 }

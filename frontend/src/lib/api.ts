@@ -1,5 +1,5 @@
 import axios, { AxiosInstance } from "axios";
-import { ApiResponse, AuthResponse, User, Payment, DashboardSummary, MemberWithPayments } from "../types";
+import { ApiResponse, AuthResponse, CreateMemberFormData, RecordPaymentFormData, User, Payment, DashboardSummary, MemberWithPayments, YearlyReport } from "../types";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
 
@@ -24,6 +24,11 @@ api.interceptors.request.use((config) => {
 api.interceptors.response.use(
   (response) => response,
   (error) => {
+    if (error.response?.status === 401 && typeof window !== "undefined") {
+      localStorage.removeItem("token");
+      localStorage.removeItem("user");
+      if (window.location.pathname !== "/login") window.location.assign("/login");
+    }
     return Promise.reject(error);
   }
 );
@@ -32,12 +37,13 @@ api.interceptors.response.use(
 export const authApi = {
   login: (phone: string, password: string) =>
     api.post<AuthResponse>("/auth/login", { phone, password }),
+  register: (data: { name: string; fatherName?: string; address?: string; phone: string; email?: string; password: string }) =>
+    api.post<AuthResponse>("/auth/register", data),
   
   getMe: () =>
     api.get<ApiResponse<User>>("/auth/me"),
 };
 
-// Members API (TODO: Implement)
 export const membersApi = {
   getAll: () =>
     api.get<ApiResponse<MemberWithPayments[]>>("/members"),
@@ -45,25 +51,24 @@ export const membersApi = {
   getById: (id: number) =>
     api.get<ApiResponse<MemberWithPayments>>(`/members/${id}`),
   
-  create: (data: unknown) =>
+  create: (data: CreateMemberFormData & { password?: string }) =>
     api.post<ApiResponse<User>>("/members", data),
   
-  update: (id: number, data: unknown) =>
+  update: (id: number, data: Partial<CreateMemberFormData>) =>
     api.put<ApiResponse<User>>(`/members/${id}`, data),
   
   delete: (id: number) =>
     api.delete<ApiResponse<void>>(`/members/${id}`),
   
   search: (query: string) =>
-    api.get<ApiResponse<MemberWithPayments[]>>(`/members/search/${query}`),
+    api.get<ApiResponse<MemberWithPayments[]>>(`/members/search/${encodeURIComponent(query)}`),
 };
 
-// Payments API (TODO: Implement)
 export const paymentsApi = {
   getByUserId: (userId: number) =>
     api.get<ApiResponse<Payment[]>>(`/payments/${userId}`),
   
-  create: (data: unknown) =>
+  create: (data: RecordPaymentFormData) =>
     api.post<ApiResponse<Payment>>("/payments", data),
   
   delete: (id: number) =>
@@ -73,7 +78,10 @@ export const paymentsApi = {
     api.get<ApiResponse<Payment[]>>(`/payments/month/${month}/year/${year}`),
 };
 
-// Dashboard API (TODO: Implement)
+export const defaultersApi = {
+  getCurrent: () => api.get<ApiResponse<{ month: string; year: number; members: User[] }>>("/defaulters"),
+};
+
 export const dashboardApi = {
   getSummary: () =>
     api.get<ApiResponse<DashboardSummary>>("/dashboard/summary"),
@@ -83,6 +91,18 @@ export const dashboardApi = {
   
   getYearlyReport: (year: number) =>
     api.get<ApiResponse<unknown>>(`/dashboard/yearly-report/${year}`),
+};
+
+export const reportsApi = {
+  monthly: (month: string, year: number) => api.get<ApiResponse<{ month: string; year: number; totalMembers: number; collected: number; pending: number; payments: Payment[] }>>(`/reports/monthly/${month}/${year}`),
+  yearly: (year: number) => api.get<ApiResponse<YearlyReport>>(`/reports/yearly/${year}`),
+  whatsapp: (id: number) => api.get<ApiResponse<{ url: string; message: string }>>(`/reports/whatsapp/${id}`),
+};
+
+export const adminsApi = {
+  getAll: () => api.get<ApiResponse<User[]>>("/admins"),
+  create: (data: { name: string; phone: string; password: string }) => api.post<ApiResponse<User>>("/admins", data),
+  remove: (id: number) => api.delete(`/admins/${id}`),
 };
 
 export default api;

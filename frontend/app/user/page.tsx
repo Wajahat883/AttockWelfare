@@ -1,25 +1,8 @@
 "use client";
-
-import { LogoutButton } from "@/components/logout-button";
+import { DashboardShell } from "@/components/dashboard-shell";
+import { PaymentGrid } from "@/components/payment-grid";
 import { ProtectedRoute } from "@/components/protected-route";
+import { useAuthStore } from "@/lib/auth-store";
+import { useLanguage } from "@/components/language-provider";
 
-export default function UserDashboard() {
-  return (
-    <ProtectedRoute requiredRoles={["USER"]}>
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between gap-4">
-          <h1 className="text-3xl font-bold text-gray-900">My Profile & Payments</h1>
-          <LogoutButton />
-        </div>
-        <p className="text-gray-600 mt-2">View your payment history and contribution status</p>
-        
-        {/* TODO: Implement User Dashboard Components */}
-        <div className="mt-8 p-6 bg-white rounded-lg shadow">
-          <p className="text-gray-600">User dashboard features coming soon...</p>
-        </div>
-      </div>
-    </div>
-    </ProtectedRoute>
-  );
-}
+export default function UserDashboard() { const user = useAuthStore((state) => state.user); const { t } = useLanguage(); return <ProtectedRoute requiredRoles={["USER"]}><DashboardShell role="USER"><div className="mb-8 flex flex-col gap-2"><p className="page-eyebrow">Attock Welfare</p><h1 className="page-title">{t("myContributions")}</h1><p className="text-sm text-slate-500">{t("paymentHistory")}</p></div>{user && <PaymentGrid userId={user.id} />}</DashboardShell></ProtectedRoute>; }

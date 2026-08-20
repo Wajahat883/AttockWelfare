@@ -1,5 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import { verifyToken, extractTokenFromHeader } from "../utils/jwt";
+import { prisma } from "../lib/prisma";
 
 export interface AuthRequest extends Request {
   user?: {
@@ -9,11 +10,11 @@ export interface AuthRequest extends Request {
   };
 }
 
-export const authMiddleware = (
+export const authMiddleware = async (
   req: AuthRequest,
   res: Response,
   next: NextFunction
-): void => {
+): Promise<void> => {
   try {
     const token = extractTokenFromHeader(req.headers.authorization);
     if (!token) {
@@ -33,7 +34,12 @@ export const authMiddleware = (
       return;
     }
 
-    req.user = payload;
+    const user = await prisma.user.findUnique({ where: { id: payload.userId }, select: { role: true, phone: true, isActive: true } });
+    if (!user || !user.isActive || user.role !== payload.role) {
+      res.status(401).json({ error: "Unauthorized", message: "Account is inactive or no longer valid" });
+      return;
+    }
+    req.user = { ...payload, role: user.role as "OWNER" | "ADMIN" | "USER", phone: user.phone };
     next();
   } catch (error) {
     res.status(401).json({

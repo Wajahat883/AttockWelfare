@@ -6,7 +6,7 @@ export interface AuthRequest extends Request {
         phone: string;
     };
 }
-export declare const authMiddleware: (req: AuthRequest, res: Response, next: NextFunction) => void;
+export declare const authMiddleware: (req: AuthRequest, res: Response, next: NextFunction) => Promise<void>;
 export declare const requireRole: (...roles: string[]) => (req: AuthRequest, res: Response, next: NextFunction) => void;
 export declare const ownerOnly: (req: AuthRequest, res: Response, next: NextFunction) => void;
 export declare const ownerOrAdmin: (req: AuthRequest, res: Response, next: NextFunction) => void;

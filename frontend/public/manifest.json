@@ -1,0 +1,10 @@
+{
+  "name": "Attock Welfare",
+  "short_name": "Welfare",
+  "description": "Monthly contribution management system",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#047857",
+  "icons": []
+}

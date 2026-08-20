@@ -5,14 +5,21 @@ import authRoutes from "./routes/auth.routes";
 import memberRoutes from "./routes/members.routes";
 import paymentRoutes from "./routes/payments.routes";
 import dashboardRoutes from "./routes/dashboard.routes";
+import defaulterRoutes from "./routes/defaulters.routes";
+import reportsRoutes from "./routes/reports.routes";
+import adminsRoutes from "./routes/admins.routes";
+import { loginRateLimit } from "./middleware/login-rate-limit";
 
 const app: Express = express();
 const port = process.env.PORT || 5000;
 
 // Middleware
-app.use(cors());
+const allowedOrigins = (process.env.FRONTEND_URL ?? "http://localhost:3000,http://127.0.0.1:3000").split(",").map((origin) => origin.trim()).filter(Boolean);
+app.use(cors({ origin: allowedOrigins }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+app.use("/api/auth/login", loginRateLimit);
 
 // Request logging middleware
 app.use((req: Request, res: Response, next: NextFunction) => {
@@ -21,10 +28,31 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 });
 
 // API Routes
+app.get("/api", (_req: Request, res: Response) => {
+  res.json({ name: "Attock Welfare API", version: "1.0.0", health: "/health" });
+});
+app.get("/api/docs", (_req: Request, res: Response) => {
+  res.json({
+    name: "Attock Welfare API",
+    endpoints: [
+      "POST /api/auth/login",
+      "GET /api/auth/me",
+      "GET|POST|PUT|DELETE /api/members",
+      "GET|POST|DELETE /api/payments",
+      "GET /api/defaulters",
+      "GET /api/dashboard/summary",
+      "GET /api/reports/monthly/:month/:year",
+      "GET /api/reports/yearly/:year",
+    ],
+  });
+});
 app.use("/api/auth", authRoutes);
 app.use("/api/members", memberRoutes);
 app.use("/api/payments", paymentRoutes);
 app.use("/api/dashboard", dashboardRoutes);
+app.use("/api/defaulters", defaulterRoutes);
+app.use("/api/reports", reportsRoutes);
+app.use("/api/admins", adminsRoutes);
 
 // Health check endpoint
 app.get("/health", (req: Request, res: Response) => {
@@ -44,7 +72,7 @@ app.use((req: Request, res: Response) => {
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   console.error("[ERROR]", err);
   res.status(err.status || 500).json({
-    error: err.message || "Internal Server Error",
+    error: "Internal Server Error",
     timestamp: new Date().toISOString(),
   });
 });

@@ -18,13 +18,16 @@ export function AuthProvider({ children }: AuthProviderProps) {
     if (token && userJson) {
       try {
         const user = JSON.parse(userJson);
-        setToken(token);
-        setUser(user);
+        if (user?.id && user?.role && user?.phone) { setToken(token); setUser(user); }
+        else { localStorage.removeItem("token"); localStorage.removeItem("user"); }
       } catch (error) {
         console.error("Failed to restore auth state:", error);
         localStorage.removeItem("token");
         localStorage.removeItem("user");
       }
+    } else if (token || userJson) {
+      localStorage.removeItem("token");
+      localStorage.removeItem("user");
     }
 
     setHasHydrated(true);

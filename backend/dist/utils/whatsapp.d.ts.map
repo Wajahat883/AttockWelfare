@@ -1,0 +1,1 @@
+{"version":3,"file":"whatsapp.d.ts","sourceRoot":"","sources":["../../src/utils/whatsapp.ts"],"names":[],"mappings":"AAEA,wBAAgB,uBAAuB,CAAC,MAAM,EAAE;IAAE,IAAI,EAAE,MAAM,CAAC;IAAC,aAAa,EAAE,OAAO,CAAA;CAAE,EAAE,KAAK,SAAoB,EAAE,QAAQ,GAAE,IAAI,GAAG,IAAW,UAIhJ;AAED,wBAAgB,gBAAgB,CAAC,KAAK,EAAE,MAAM,EAAE,OAAO,EAAE,MAAM,UAI9D"}

@@ -7,7 +7,6 @@ export default function UserDashboard() {
         <h1 className="text-3xl font-bold text-gray-900">My Profile</h1>
         <p className="text-gray-600 mt-2">View your payment history and profile</p>
         
-        {/* TODO: Implement User Dashboard Components */}
         <div className="mt-8 p-6 bg-white rounded-lg shadow">
           <p className="text-gray-600">User dashboard features coming soon...</p>
         </div>

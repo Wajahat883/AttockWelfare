@@ -1,25 +1,7 @@
 "use client";
-
-import { LogoutButton } from "@/components/logout-button";
+import { DashboardHome } from "@/components/dashboard-home";
+import { DashboardShell } from "@/components/dashboard-shell";
 import { ProtectedRoute } from "@/components/protected-route";
+import { useLanguage } from "@/components/language-provider";
 
-export default function AdminDashboard() {
-  return (
-    <ProtectedRoute requiredRoles={["ADMIN"]}>
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between gap-4">
-          <h1 className="text-3xl font-bold text-gray-900">Admin Dashboard</h1>
-          <LogoutButton />
-        </div>
-        <p className="text-gray-600 mt-2">Welcome to the Admin Control Panel</p>
-        
-        {/* TODO: Implement Admin Dashboard Components */}
-        <div className="mt-8 p-6 bg-white rounded-lg shadow">
-          <p className="text-gray-600">Dashboard features coming soon...</p>
-        </div>
-      </div>
-    </div>
-    </ProtectedRoute>
-  );
-}
+export default function AdminDashboard() { const { t } = useLanguage(); return <ProtectedRoute requiredRoles={["ADMIN"]}><DashboardShell role="ADMIN"><div className="mb-8 flex flex-col gap-2"><p className="page-eyebrow">Attock Welfare</p><h1 className="page-title">{t("dailyOperations")}</h1><p className="text-sm text-slate-500">{t("members")} · {t("payments")} · {t("reports")}</p></div><DashboardHome role="ADMIN" /></DashboardShell></ProtectedRoute>; }

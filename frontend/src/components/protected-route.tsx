@@ -18,7 +18,8 @@ export function ProtectedRoute({
   const { hasHydrated, isAuthenticated, user } = useAuthStore();
 
   useEffect(() => {
-    if (hasHydrated && !isAuthenticated()) {
+    if (hasHydrated && (!isAuthenticated() || !user)) {
+      if (isAuthenticated() && !user) { useAuthStore.getState().logout(); }
       // Redirect to login if not authenticated
       router.push("/login");
       return;
@@ -33,7 +34,7 @@ export function ProtectedRoute({
     }
   }, [hasHydrated, user, requiredRoles, router, isAuthenticated]);
 
-  if (!hasHydrated || !isAuthenticated() || !user) {
+  if (!hasHydrated) {
     return (
       <div className="flex min-h-screen items-center justify-center">
         <div className="text-center">
@@ -43,5 +44,6 @@ export function ProtectedRoute({
     );
   }
 
+  if (!isAuthenticated() || !user) return null;
   return <>{children}</>;
 }
